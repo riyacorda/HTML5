@@ -298,9 +298,444 @@ autocomplete="new-password">
 </select>
 </p>
 <p>
-    <label fo
+    <label for="skills">
+        Select your Skills:
+    </label>
+    <br>
+    <select
+    id="skills"
+    name="skills"
+    multiple size="6">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">Javascript</option>
+    <option value="python">Python</option>
+    <option value="java">Java</option>
+    <option value="sql">SQL</option>
+    <option value="react">React</option>
+    <option value="docker">Docker</option>
+
+</select>
 </p>
 </fieldset>
+<br>
+<fieldset>
+    <legend>Interests</legend>
+    <p>
+        Select your interests:
+    </p>
+    <input
+    type="checkbox"
+    id="coding"
+    name="interest"
+    value="coding">
+    <label for="coding">
+        coding
+    </label>
+    <br>
+    <input 
+    type="checkbox"
+    id="music"
+    name="interest"
+    value="music">
+    <label for="music">Music</label>
+    <br>
+    <input
+    type="checkbox"
+    id="sports"
+    name="interest"
+    value="sports">
+    <label for="sports"
+    >Sports</label>
+    <br>
+    <input
+    type="checkbox"
+    id="photography"
+    name="interest"
+    value="photography"
+    >
+    <label for="photography">photography</label>
+    <br>
+    <input
+    type="checkbox"
+    id="travel"
+    name="interest"
+    value="travel">
+    <label for="travel">Travelling</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Range Input</legend>
+    <p>
+        <label for="experience">
+            Years of experience:
+        </label>
+        <input
+        type="range"
+        id="experience"
+        name="experience"
+        min="0"
+        max="20"
+        step="1"
+        value="2">
+    </p>
+    <p>
+        <label for="satisfaction">satisfaction level:</label>
+        <input
+        type="range"
+        id="satisfaction"
+        name="satisfaction"
+        min="0"
+        max="100"
+        step="10"
+        value="50">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Color Selection</legend>
+    <p>
+        <label for="favoriteColor">
+            favoriteColor:
+        </label>
+        <input
+        type="color"
+        id="favoriteColor"
+        name="favoriteColor"
+        value="#c25b5b">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>File Upload</legend>
+    <p>
+        <label for="photo">
+            Upload Profile Photo:
+        </label>
+        <input
+        type="file"
+        id="photo"
+        name="photo"
+        accept="image/*">
+    </p>
+    <p>
+        <label for="resume">
+            Upload resume:
+        </label>
+        <input
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf,.doc,.docx">
+    </p>
+    <p>
+        <label for="Documents">Upload Multiple Documents:</label>
+        <input
+        type="file"
+        id="Documents"
+        name="Documents"
+        multiple>
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Additional Information</legend>
+    <p>
+        <label for="about">
+            Tell us about yourself:
+        </label>
+        <br>
+        <textarea
+        id="about"
+        name="about"
+        rows="8"
+        cols="60"
+        placeholder="Write something about yourself..."
+        minlength="20"
+        maxlength="1000"
+        ></textarea>
+    </p>
+    <p>
+        <label for="feedback">feedback</label>
+        <br>
+        <textarea
+        id="feedback"
+        name="feedback"
+        rows="6"
+        cols="60"
+        placeholder="Enter yourfeedback"></textarea>
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Programming languages</legend>
+    <p>
+        <label for="languages">
+            choose a language:
+        </label>
+        <input
+        type="text"
+        id="language"
+        name="language"
+        placeholder="start typing.....">
+        <datalist id="languages">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+            <option value="C"></option>
+            <option value="C++"></option>
+            <option value="C#"></option>
+            <option value="PHP"></option>
+            <option value="Ruby"></option>
+            <option value="Go"></option>
+            <option value="Rust"></option>
+        
+        </datalist>
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Numeric Information</legend>
+    <p>
+        <label for="marks">Marks:</label>
+        <input
+        type="number"
+        id="marks"
+        name="marks"
+        min="0"
+        max="100"
+        step="1">
+    </p>
+    <p>
+        <label for="percentage">percentage:</label>
+        <input
+        type="number"
+        id="percentage"
+        name="percentage"
+        min="0"
+        max="100"
+        step="0.01">
+    </p>
+    <p>
+        <label for="quantity">Quantity:</label>
+        <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="100"
+        value="1">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Meter example</legend>
+    <p>Your skill level:</p>
+    <meter
+    min="0"
+    max="100"
+    value="70">
+70%</meter>
+<p> 70 out of 100</p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Progress Example</legend>
+    <p>Profile Completion:</p>
+    <progress
+    value="70"
+    max="100">70%
+</progress>
+<p>70% completed</p>
+</fieldset>
+<br>
+<input
+type="hidden"
+name="formType"
+value="studentRegistration">
+<fieldset>
+    <legend>Readonly and Disabled Fields</legend>
+    <p>
+        <label for="studentid">
+            STUDENT ID:
+        </label>
+        <input
+        type="text"
+        id="studentid"
+        name="studentid"
+        value="STU2026001"
+        readonly>
+    </p>
+    <p>
+        <label for="disabledField">Disabled field:</label>
+        <input
+        type="text"
+        id="disabledField"
+        name="disabledField"
+        value="This field is disabled field"disabled>
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Terms and Conditions</legend>
+    <input
+    type="checkbox"
+    id="terms"
+    name="terms"
+    value="accepted"
+    required>
+    <label for="terms">
+        I agree to the terms and conditions.
+    </label>
+    <br><br>
+    <input
+    type="checkbox"
+    id="privacy"
+    name="privacy"
+    value="accepted"
+    required>
+    <label for="privacy">I agree to the Privacy policy.</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend>
+        Form Buttons
+    </legend>
+    <p>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset form</button>
+        <button type="button">Normal button</button>
+    </p>
+    <p>
+        <input type="submit" 
+        value="Submit using Input">
+    </p>
+    <p>
+        <input type="reset"
+        value="Reset using input">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Image Submit Button</legend>
+    <p>Image input can be used as a submit button</p>
+    <input
+    type="image"
+    src="submit-button.png"
+    alt="submit"
+    width="120"
+    height="40">
+</fieldset>
+<br>
+<fieldset>
+    <legend>
+        Autocomplete Example
+    </legend>
+    <p>
+        <label for="fullname">Full Name:</label>
+        <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        autocomplete="name">
+    </p>
+    <p>
+        <label for="emailaddress">Email:</label>
+        <input
+        type="email"
+        id="emailaddress"
+        name="emailaddress"
+        autocomplete="email">
+    </p>
+    <p>
+        <label for="telephone">Telephone:</label>
+        <input
+        type="tel"
+        id="telephone"
+        name="telephone"
+        autocomplete="tel">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Pattern Validation</legend>
+    <p>
+        <label for="stuedentCode">Student Code:</label>
+        <input
+        type="text"
+        id="stuedentCode"
+        name="stuedentCode"
+        placeholder="Example:BCA2026001"
+        pattern="[A-Z]{3}[0-9]{7}"
+        title="Enter 3 capital letters for  allowed by 7 numbers">
+    </p>
+    <p>
+        <label for="postalCode">Postak code:</label>
+        <input type="text"
+        id="postalCode"
+        name="postalCode"
+        pattern="[0-9]{6}"
+        maxlength="6"
+        placeholder="6 digit Pin"
+        title="Enter a 6 digit postal code">
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Required Fields</legend>
+    <p>
+        <label for="requiredName">Name:</label>
+        <input type="text"
+        id="requiredName"
+        name="requiredName"
+        required>
+    </p>
+    <p>
+        <label for="requiredEmail">Email:</label>
+        <input
+        type="email"
+        id="requiredEmail"
+        name="requiredEmail"
+        required>
+    </p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Different form Submission Options</legend>
+    <p>
+        <button
+        type="submit"
+        name="action"
+        value="save">Save</button>
+        <button
+        type="submit"
+        name="action"
+        value="submit"></button>
+        <button
+        type="submit"
+        name="action"
+        value="draft"
+        formnovalidate>
+    Save as Draft</button>
+    </p>
+</fieldset>
+<br>
+<hr>
+<h2>Final Submission</h2>
+<p>Please check all the information befor submitting the form.</p>
+<button
+type="submit">Submit the complete form</button>
+<button
+type="reset">clear all fields</button>
 </form>
+<hr>
+<footer>
+    <p>
+        Complete HTML Forms Practice Program
+    </p>
+    <p>HTML only-NO css-no javasript</p>
+</footer>
 </body>
 </html>
