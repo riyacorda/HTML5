@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <style>
+        *{box-sizing: border-box; }
+        body{
+            margin:0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            font-family: system-ui, sans-serif;
+            color: #172033;
+            background: linear-gradient(135deg,#e0f2fe,#ede9fe);
+        }
+        .profile{
+            width: min(100%, 360px);
+            padding: 32px;
+            text-align: center;
+            background: white;
+            border:1px solid #e2e8f0;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgb(15 23 42/ 12%);
+            transition: transform 180ms ease,box-shadow 180ms ease;
+        }
+        .profile:hover{
+            transform: translateY(-6px);
+            box-shadow: 0 28px 60px rgb(15 23 42/16%);
+        }
+        .avatar{
+            width: 104px;
+            height: 104px;
+            margin: 0 auto 18px;
+            display: grid;
+            place-items: center;
+            border: 5px solid #dbeafe;
+            border-radius: 50%;
+            color:white;
+            background: #2563eb;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        h1{
+            margin: 0;font-size: 1.6rem;}
+            .role{margin: 8px 0 16px; color: #4f46e5; font-weight: 700;
+        }
+        .bio{
+            color:#64748b;line-height: 1.7;}
+            .tags{
+                display: flex; flex-wrap: wrap;justify-content: center;gap: 8px; padding: 0;list-style: none;}
+                .tags li{ padding: 7px 11px;border-radius: 999px; background: #eff6ff;color:#1d4ed8;font-size: .85rem;
+            }
+            .contact{
+                display: inline-block;
+                margin-top: 14px ;
+                padding: 12px 18px;
+                border-radius: 12px;
+                background: #172554;
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+                transition: background 180ms ease,tranform 180ms ease;
+            }
+            .contact:hover{
+                background: #3730a3; tranform:translateY(-2px);
+            }
+            .contact:focus-visible{ outline: 3px solid #60a5fa;outline-offset: 4px;}
+            @media(prefers-reduced-motion: reduce){
+                *,*::before,*::after{transition-duration: .01ms !important;}
+            }
+    </style>
+</head>
+<body>
+    <main class="Profile">
+        <div class="avatar" aria-hidden="true">RSC</div>
+        <h1>Riya Shyna Corda</h1>
+        <p class="role">Student</p>
+        <p class="bio">I help learners turn ideas into useful digital skills through code,creativity and consistent practice.</p>
+        <ul class="tags" aria-label="Skills">
+            <li>HTML</li><li>CSS</li><li>Python</li><li>UI Design</li>
+        </ul>
+        <a class="contact" href="mailto:gello2example.com">Contact me</a>
+    </main>
+</body>
+</html>
